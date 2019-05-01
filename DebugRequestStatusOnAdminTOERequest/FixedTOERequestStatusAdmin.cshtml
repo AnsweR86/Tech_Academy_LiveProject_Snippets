@@ -1,0 +1,15 @@
+@*TOE ADMIN DISPLAY APPROVED DENIED PENDING CORRECT*@
+
+@*Use Nullable-boolean logic*@
+@*denied == false, approved == true, Pending == null*@
+
+@{ if (item.ActiveSchedule == false){
+    <p>Denied</p>
+}
+else if (item.ActiveSchedule == true){
+    <p>Approved</p>
+}
+else{
+    <p>Pending</p>
+    }
+}
